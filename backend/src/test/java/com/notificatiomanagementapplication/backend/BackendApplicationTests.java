@@ -1,10 +1,10 @@
-package com.example.NotificatioManagement;
+package com.notificatiomanagementapplication.backend;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class NotificatioManagementApplicationTests {
+class BackendApplicationTests {
 
 	@Test
 	void contextLoads() {
