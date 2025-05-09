@@ -1,0 +1,184 @@
+/* Skeleton Loading Animation Styles */
+
+.skeleton-pulse {
+  display: inline-block;
+  background: linear-gradient(90deg, var(--gray-200) 0%, var(--gray-300) 50%, var(--gray-200) 100%);
+  background-size: 200% 100%;
+  animation: pulse 1.5s ease-in-out infinite;
+  border-radius: 4px;
+  position: relative;
+  overflow: hidden;
+}
+
+@keyframes pulse {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: -200% 0%;
+  }
+}
+
+/* Post Card Skeleton */
+.skeleton-card {
+  border: none;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  margin-bottom: 1.5rem;
+  opacity: 0;
+  animation: skeleton-fade-in 0.5s ease forwards;
+}
+
+.skeleton-card:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.skeleton-card:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.skeleton-card:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+@keyframes skeleton-fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.skeleton-card .card-header {
+  background-color: white;
+  border-bottom: 1px solid var(--gray-200);
+  padding: 1rem 1.25rem;
+}
+
+.skeleton-media {
+  width: 100%;
+  height: 200px;
+}
+
+.skeleton-feed {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* Content Skeleton */
+.skeleton-title {
+  height: 32px;
+  margin-bottom: 1rem;
+  width: 50%;
+}
+
+.skeleton-text {
+  height: 16px;
+  margin-bottom: 0.75rem;
+}
+
+.skeleton-text:last-child {
+  width: 80%;
+}
+
+.skeleton-button {
+  height: 38px;
+  width: 120px;
+  border-radius: 6px;
+}
+
+.skeleton-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.skeleton-tag {
+  height: 24px;
+  width: 80px;
+  border-radius: 50px;
+  margin-right: 8px;
+  margin-bottom: 8px;
+}
+
+/* Profile Skeleton */
+.skeleton-profile-header {
+  padding: 2rem;
+  border-radius: 15px;
+  margin-bottom: 1.5rem;
+}
+
+.skeleton-profile-avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+.skeleton-profile-name {
+  height: 30px;
+  width: 180px;
+  margin-bottom: 1rem;
+}
+
+.skeleton-profile-bio {
+  height: 16px;
+  margin-bottom: 0.5rem;
+}
+
+/* Comment Skeleton */
+.skeleton-comment {
+  padding: 1rem;
+  border-radius: 10px;
+  background: white;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: flex-start;
+}
+
+.skeleton-comment-content {
+  flex: 1;
+  margin-left: 0.75rem;
+}
+
+/* Learning Plan Skeleton */
+.skeleton-learning-plan {
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  background: white;
+}
+
+.skeleton-progress {
+  height: 8px;
+  border-radius: 10px;
+  margin: 1rem 0;
+}
+
+/* Animation for staggered appearance */
+.staggered-skeleton > * {
+  opacity: 0;
+  animation: staggered-fade-in 0.5s ease forwards;
+}
+
+.staggered-skeleton > *:nth-child(1) { animation-delay: 0.1s; }
+.staggered-skeleton > *:nth-child(2) { animation-delay: 0.2s; }
+.staggered-skeleton > *:nth-child(3) { animation-delay: 0.3s; }
+.staggered-skeleton > *:nth-child(4) { animation-delay: 0.4s; }
+.staggered-skeleton > *:nth-child(5) { animation-delay: 0.5s; }
+
+@keyframes staggered-fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
